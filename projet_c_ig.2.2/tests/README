@@ -1,0 +1,14 @@
+======= Our tests =======
+
+frame_test : 
+	- tests the printing of multiple frames
+	- allowed us to test the geometry-manager and the transparency
+
+button_test :
+	- tests all the possible buttons positions, and the position of images
+
+toplevel_in_toplevel_test :
+	- verify that we cannot create a toplevel in a toplevel
+
+test_linked_rects :
+	- tests the linking of the invalid rects (works, but not used)

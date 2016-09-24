@@ -1,0 +1,284 @@
+\hypertarget{ei__callback_8c}{
+\section{ei\_\-callback.c File Reference}
+\label{ei__callback_8c}\index{ei\_\-callback.c@{ei\_\-callback.c}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}ei\_\-event.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-application.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-callback.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-global.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}hw\_\-interface.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-button.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ei__callback_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}(a, b)~((a $>$ b)? a : b)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a3d81ae7a8400d0029893a01142b0a528}{sunken\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a8837a8369ab0affa0888653c292582f3}{raised\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a42074596c8e384e2e51f4dd648766325}{resize\_\-started} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a4b8b79ea5ee2d4d2ff56acbb03a16eca}{resize\_\-finished} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a26f228f408d53721826882a673974b23}{resize\_\-window} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_abba915cdf3ae98efd8c041da81af0833}{move\_\-started} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a25a6306f9509ae739f752bb9c4b20a8b}{move\_\-finished} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a46b8aba417339e0f41338ab822410149}{move\_\-window} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_afcd73f6bc5a09f923909bc9f2ab8e809}{close\_\-started} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_aaa1892c5c3e88d74c851abde46003bdd}{close\_\-finished} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, void $\ast$user\_\-param)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a9cf1fbfb40dad93b9291007b190fe9b8}{process\_\-callback} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{structglobal__callback}{global\_\-callback} $\ast$callback)
+\item 
+\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_a8d88305ae30c8eb914bea4c18c70310e}{find\_\-widget} (uint32\_\-t pick\_\-id, \hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget)
+\item 
+static uint32\_\-t \hyperlink{ei__callback_8c_a09bcdd68df55ac82e495a5204aec0884}{set\_\-pick\_\-id} (uint8\_\-t $\ast$color)
+\item 
+static uint8\_\-t $\ast$ \hyperlink{ei__callback_8c_aa6f7e4c21fc314004eb59af730fb48b8}{get\_\-buffer} (\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} offscreen, \hyperlink{structei__point__t}{ei\_\-point\_\-t} clicked, uint32\_\-t width)
+\item 
+static \hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_a45595b6dbb30d0d248c11bfc0aa18ced}{get\_\-widget} (\hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} $\ast$offscreen)
+\item 
+static \hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a46948811d3caa2e3fe5d655c868f8da4}{process\_\-event\_\-all} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} $\ast$offscreen)
+\item 
+static \hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_acf2d9a230edf2d7c2c26d261a40a96f7}{process\_\-event\_\-class} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} $\ast$offscreen)
+\item 
+static \hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a5b7672687060bb5b75dbd02b1a6552cc}{process\_\-event\_\-widget} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} $\ast$offscreen)
+\item 
+void \hyperlink{ei__callback_8c_a1c31a9c3f9a7dc4c8fffe36bc421d73a}{process\_\-event} (\hyperlink{structei__event__t}{ei\_\-event\_\-t} $\ast$event, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} $\ast$offscreen)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a238096d8027526f27af9d3056fd8a026}{EI\_\-RESIZE\_\-IN\_\-PROGRESS} = EI\_\-FALSE
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_abad3e086e1ff2a2366033048d3fc4434}{EI\_\-MOVE\_\-IN\_\-PROGRESS} = EI\_\-FALSE
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\_\-bool\_\-t} \hyperlink{ei__callback_8c_a6d01b0d069fd0c663d7ddee4e69c2654}{EI\_\-CLOSE\_\-IN\_\-PROGRESS} = EI\_\-FALSE
+\item 
+\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_a09298c8bdbfe9ecd0edebbe3faf9c114}{CLICKED\_\-BUTTON} = NULL
+\item 
+\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_aca5ca875cf5bb04a0bcf5101248a96b4}{CLICKED\_\-TOPLEVEL} = NULL
+\item 
+\hyperlink{structei__point__t}{ei\_\-point\_\-t} \hyperlink{ei__callback_8c_a90d3f444348fc8d11a8de20800609f3a}{CLICK\_\-POS} = \{0, 0\}
+\item 
+\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_a3307eecfdd16e231fe5fd6fbc5c2926a}{CLICKED\_\-CLOSE\_\-BUTTON} = NULL
+\item 
+\hyperlink{structei__button__widget__t}{ei\_\-button\_\-widget\_\-t} $\ast$ \hyperlink{ei__callback_8c_a1da3dff8e1c9ff647fabe3e7fa4a6d3c}{SUNKEN\_\-BUTTON} = NULL
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{ei__callback_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!MAX@{MAX}}
+\index{MAX@{MAX}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{MAX}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX(a, \/  b)~((a $>$ b)? a : b)}}
+\label{ei__callback_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}
+
+
+Definition at line 11 of file ei\_\-callback.c.
+
+\subsection{Function Documentation}
+\hypertarget{ei__callback_8c_aaa1892c5c3e88d74c851abde46003bdd}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!close\_\-finished@{close\_\-finished}}
+\index{close\_\-finished@{close\_\-finished}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{close\_\-finished}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} close\_\-finished ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_aaa1892c5c3e88d74c851abde46003bdd}
+
+
+Definition at line 140 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_afcd73f6bc5a09f923909bc9f2ab8e809}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!close\_\-started@{close\_\-started}}
+\index{close\_\-started@{close\_\-started}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{close\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} close\_\-started ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_afcd73f6bc5a09f923909bc9f2ab8e809}
+
+
+Definition at line 128 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a8d88305ae30c8eb914bea4c18c70310e}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!find\_\-widget@{find\_\-widget}}
+\index{find\_\-widget@{find\_\-widget}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{find\_\-widget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widget\_\-t}$\ast$ find\_\-widget (uint32\_\-t {\em pick\_\-id}, \/  {\bf ei\_\-widget\_\-t} $\ast$ {\em widget})}}
+\label{ei__callback_8c_a8d88305ae30c8eb914bea4c18c70310e}
+
+
+Definition at line 169 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_aa6f7e4c21fc314004eb59af730fb48b8}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!get\_\-buffer@{get\_\-buffer}}
+\index{get\_\-buffer@{get\_\-buffer}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{get\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}static uint8\_\-t$\ast$ get\_\-buffer ({\bf ei\_\-surface\_\-t} {\em offscreen}, \/  {\bf ei\_\-point\_\-t} {\em clicked}, \/  uint32\_\-t {\em width})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_aa6f7e4c21fc314004eb59af730fb48b8}
+
+
+Definition at line 198 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a45595b6dbb30d0d248c11bfc0aa18ced}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!get\_\-widget@{get\_\-widget}}
+\index{get\_\-widget@{get\_\-widget}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{get\_\-widget}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ei\_\-widget\_\-t}$\ast$ get\_\-widget ({\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf ei\_\-surface\_\-t} $\ast$ {\em offscreen})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_a45595b6dbb30d0d248c11bfc0aa18ced}
+
+
+Definition at line 209 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a25a6306f9509ae739f752bb9c4b20a8b}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!move\_\-finished@{move\_\-finished}}
+\index{move\_\-finished@{move\_\-finished}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{move\_\-finished}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} move\_\-finished ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a25a6306f9509ae739f752bb9c4b20a8b}
+
+
+Definition at line 98 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_abba915cdf3ae98efd8c041da81af0833}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!move\_\-started@{move\_\-started}}
+\index{move\_\-started@{move\_\-started}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{move\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} move\_\-started ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_abba915cdf3ae98efd8c041da81af0833}
+
+
+Definition at line 85 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a46b8aba417339e0f41338ab822410149}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!move\_\-window@{move\_\-window}}
+\index{move\_\-window@{move\_\-window}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{move\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} move\_\-window ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a46b8aba417339e0f41338ab822410149}
+
+
+Definition at line 110 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a9cf1fbfb40dad93b9291007b190fe9b8}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!process\_\-callback@{process\_\-callback}}
+\index{process\_\-callback@{process\_\-callback}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{process\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} process\_\-callback ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf global\_\-callback} $\ast$ {\em callback})}}
+\label{ei__callback_8c_a9cf1fbfb40dad93b9291007b190fe9b8}
+
+
+Definition at line 154 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a1c31a9c3f9a7dc4c8fffe36bc421d73a}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!process\_\-event@{process\_\-event}}
+\index{process\_\-event@{process\_\-event}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{process\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void process\_\-event ({\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf ei\_\-surface\_\-t} $\ast$ {\em offscreen})}}
+\label{ei__callback_8c_a1c31a9c3f9a7dc4c8fffe36bc421d73a}
+
+
+Definition at line 299 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a46948811d3caa2e3fe5d655c868f8da4}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!process\_\-event\_\-all@{process\_\-event\_\-all}}
+\index{process\_\-event\_\-all@{process\_\-event\_\-all}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{process\_\-event\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ei\_\-bool\_\-t} process\_\-event\_\-all ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf ei\_\-surface\_\-t} $\ast$ {\em offscreen})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_a46948811d3caa2e3fe5d655c868f8da4}
+
+
+Definition at line 227 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_acf2d9a230edf2d7c2c26d261a40a96f7}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!process\_\-event\_\-class@{process\_\-event\_\-class}}
+\index{process\_\-event\_\-class@{process\_\-event\_\-class}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{process\_\-event\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ei\_\-bool\_\-t} process\_\-event\_\-class ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf ei\_\-surface\_\-t} $\ast$ {\em offscreen})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_acf2d9a230edf2d7c2c26d261a40a96f7}
+
+
+Definition at line 244 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a5b7672687060bb5b75dbd02b1a6552cc}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!process\_\-event\_\-widget@{process\_\-event\_\-widget}}
+\index{process\_\-event\_\-widget@{process\_\-event\_\-widget}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{process\_\-event\_\-widget}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ei\_\-bool\_\-t} process\_\-event\_\-widget ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  {\bf ei\_\-surface\_\-t} $\ast$ {\em offscreen})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_a5b7672687060bb5b75dbd02b1a6552cc}
+
+
+Definition at line 274 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a8837a8369ab0affa0888653c292582f3}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!raised\_\-button@{raised\_\-button}}
+\index{raised\_\-button@{raised\_\-button}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{raised\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} raised\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a8837a8369ab0affa0888653c292582f3}
+
+
+Definition at line 31 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a4b8b79ea5ee2d4d2ff56acbb03a16eca}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!resize\_\-finished@{resize\_\-finished}}
+\index{resize\_\-finished@{resize\_\-finished}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{resize\_\-finished}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} resize\_\-finished ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a4b8b79ea5ee2d4d2ff56acbb03a16eca}
+
+
+Definition at line 52 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a42074596c8e384e2e51f4dd648766325}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!resize\_\-started@{resize\_\-started}}
+\index{resize\_\-started@{resize\_\-started}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{resize\_\-started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} resize\_\-started ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a42074596c8e384e2e51f4dd648766325}
+
+
+Definition at line 41 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a26f228f408d53721826882a673974b23}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!resize\_\-window@{resize\_\-window}}
+\index{resize\_\-window@{resize\_\-window}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{resize\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} resize\_\-window ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a26f228f408d53721826882a673974b23}
+
+
+Definition at line 65 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a09bcdd68df55ac82e495a5204aec0884}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!set\_\-pick\_\-id@{set\_\-pick\_\-id}}
+\index{set\_\-pick\_\-id@{set\_\-pick\_\-id}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{set\_\-pick\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}static uint32\_\-t set\_\-pick\_\-id (uint8\_\-t $\ast$ {\em color})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__callback_8c_a09bcdd68df55ac82e495a5204aec0884}
+
+
+Definition at line 186 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a3d81ae7a8400d0029893a01142b0a528}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!sunken\_\-button@{sunken\_\-button}}
+\index{sunken\_\-button@{sunken\_\-button}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{sunken\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} sunken\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-event\_\-t} $\ast$ {\em event}, \/  void $\ast$ {\em user\_\-param})}}
+\label{ei__callback_8c_a3d81ae7a8400d0029893a01142b0a528}
+
+
+Definition at line 22 of file ei\_\-callback.c.
+
+\subsection{Variable Documentation}
+\hypertarget{ei__callback_8c_a90d3f444348fc8d11a8de20800609f3a}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!CLICK\_\-POS@{CLICK\_\-POS}}
+\index{CLICK\_\-POS@{CLICK\_\-POS}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{CLICK\_\-POS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-point\_\-t} {\bf CLICK\_\-POS} = \{0, 0\}}}
+\label{ei__callback_8c_a90d3f444348fc8d11a8de20800609f3a}
+
+
+Definition at line 18 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a09298c8bdbfe9ecd0edebbe3faf9c114}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!CLICKED\_\-BUTTON@{CLICKED\_\-BUTTON}}
+\index{CLICKED\_\-BUTTON@{CLICKED\_\-BUTTON}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{CLICKED\_\-BUTTON}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widget\_\-t}$\ast$ {\bf CLICKED\_\-BUTTON} = NULL}}
+\label{ei__callback_8c_a09298c8bdbfe9ecd0edebbe3faf9c114}
+
+
+Definition at line 16 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a3307eecfdd16e231fe5fd6fbc5c2926a}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!CLICKED\_\-CLOSE\_\-BUTTON@{CLICKED\_\-CLOSE\_\-BUTTON}}
+\index{CLICKED\_\-CLOSE\_\-BUTTON@{CLICKED\_\-CLOSE\_\-BUTTON}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{CLICKED\_\-CLOSE\_\-BUTTON}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widget\_\-t}$\ast$ {\bf CLICKED\_\-CLOSE\_\-BUTTON} = NULL}}
+\label{ei__callback_8c_a3307eecfdd16e231fe5fd6fbc5c2926a}
+
+
+Definition at line 19 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_aca5ca875cf5bb04a0bcf5101248a96b4}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!CLICKED\_\-TOPLEVEL@{CLICKED\_\-TOPLEVEL}}
+\index{CLICKED\_\-TOPLEVEL@{CLICKED\_\-TOPLEVEL}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{CLICKED\_\-TOPLEVEL}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widget\_\-t}$\ast$ {\bf CLICKED\_\-TOPLEVEL} = NULL}}
+\label{ei__callback_8c_aca5ca875cf5bb04a0bcf5101248a96b4}
+
+
+Definition at line 17 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a6d01b0d069fd0c663d7ddee4e69c2654}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!EI\_\-CLOSE\_\-IN\_\-PROGRESS@{EI\_\-CLOSE\_\-IN\_\-PROGRESS}}
+\index{EI\_\-CLOSE\_\-IN\_\-PROGRESS@{EI\_\-CLOSE\_\-IN\_\-PROGRESS}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{EI\_\-CLOSE\_\-IN\_\-PROGRESS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} {\bf EI\_\-CLOSE\_\-IN\_\-PROGRESS} = EI\_\-FALSE}}
+\label{ei__callback_8c_a6d01b0d069fd0c663d7ddee4e69c2654}
+
+
+Definition at line 15 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_abad3e086e1ff2a2366033048d3fc4434}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!EI\_\-MOVE\_\-IN\_\-PROGRESS@{EI\_\-MOVE\_\-IN\_\-PROGRESS}}
+\index{EI\_\-MOVE\_\-IN\_\-PROGRESS@{EI\_\-MOVE\_\-IN\_\-PROGRESS}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{EI\_\-MOVE\_\-IN\_\-PROGRESS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} {\bf EI\_\-MOVE\_\-IN\_\-PROGRESS} = EI\_\-FALSE}}
+\label{ei__callback_8c_abad3e086e1ff2a2366033048d3fc4434}
+
+
+Definition at line 14 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a238096d8027526f27af9d3056fd8a026}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!EI\_\-RESIZE\_\-IN\_\-PROGRESS@{EI\_\-RESIZE\_\-IN\_\-PROGRESS}}
+\index{EI\_\-RESIZE\_\-IN\_\-PROGRESS@{EI\_\-RESIZE\_\-IN\_\-PROGRESS}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{EI\_\-RESIZE\_\-IN\_\-PROGRESS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-bool\_\-t} {\bf EI\_\-RESIZE\_\-IN\_\-PROGRESS} = EI\_\-FALSE}}
+\label{ei__callback_8c_a238096d8027526f27af9d3056fd8a026}
+
+
+Definition at line 13 of file ei\_\-callback.c.\hypertarget{ei__callback_8c_a1da3dff8e1c9ff647fabe3e7fa4a6d3c}{
+\index{ei\_\-callback.c@{ei\_\-callback.c}!SUNKEN\_\-BUTTON@{SUNKEN\_\-BUTTON}}
+\index{SUNKEN\_\-BUTTON@{SUNKEN\_\-BUTTON}!ei_callback.c@{ei\_\-callback.c}}
+\subsubsection[{SUNKEN\_\-BUTTON}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-button\_\-widget\_\-t}$\ast$ {\bf SUNKEN\_\-BUTTON} = NULL}}
+\label{ei__callback_8c_a1da3dff8e1c9ff647fabe3e7fa4a6d3c}
+
+
+Definition at line 20 of file ei\_\-callback.c.

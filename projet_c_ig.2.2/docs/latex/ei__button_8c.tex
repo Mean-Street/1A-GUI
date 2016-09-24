@@ -1,0 +1,67 @@
+\hypertarget{ei__button_8c}{
+\section{ei\_\-button.c File Reference}
+\label{ei__button_8c}\index{ei\_\-button.c@{ei\_\-button.c}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$SDL/SDL.h$>$}\par
+{\ttfamily \#include \char`\"{}ei\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-widget.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}hw\_\-interface.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-button.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-widgetclass.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-shape.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-utils.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-geometrymanager.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__button_8c_a8fb5f9db0c6f3c5edb39be97ce36a55c}{alloc\_\-button} ()
+\item 
+void \hyperlink{ei__button_8c_ac856eb5d05f4cbc7fc6b388e0fe41477}{release\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget)
+\item 
+void \hyperlink{ei__button_8c_a3bff755e375db023a1cfd960efcfb64c}{draw\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\_\-surface\_\-t} pick\_\-surface, \hyperlink{structei__rect__t}{ei\_\-rect\_\-t} $\ast$clipper)
+\item 
+void \hyperlink{ei__button_8c_a62ca980c70d71bdf3df3f3e4268980f0}{set\_\-defaults\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget)
+\item 
+void \hyperlink{ei__button_8c_a9c96de9a79b0af265aa2eda1044e3f58}{geomnotify\_\-button} (\hyperlink{structei__widget__t}{ei\_\-widget\_\-t} $\ast$widget, \hyperlink{structei__rect__t}{ei\_\-rect\_\-t} rect)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__button_8c_a8fb5f9db0c6f3c5edb39be97ce36a55c}{
+\index{ei\_\-button.c@{ei\_\-button.c}!alloc\_\-button@{alloc\_\-button}}
+\index{alloc\_\-button@{alloc\_\-button}!ei_button.c@{ei\_\-button.c}}
+\subsubsection[{alloc\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ alloc\_\-button ()}}
+\label{ei__button_8c_a8fb5f9db0c6f3c5edb39be97ce36a55c}
+allocate memory to button 
+
+Definition at line 14 of file ei\_\-button.c.\hypertarget{ei__button_8c_a3bff755e375db023a1cfd960efcfb64c}{
+\index{ei\_\-button.c@{ei\_\-button.c}!draw\_\-button@{draw\_\-button}}
+\index{draw\_\-button@{draw\_\-button}!ei_button.c@{ei\_\-button.c}}
+\subsubsection[{draw\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}void draw\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-surface\_\-t} {\em surface}, \/  {\bf ei\_\-surface\_\-t} {\em pick\_\-surface}, \/  {\bf ei\_\-rect\_\-t} $\ast$ {\em clipper})}}
+\label{ei__button_8c_a3bff755e375db023a1cfd960efcfb64c}
+Draw the button frame, the text and the relief 
+
+Definition at line 30 of file ei\_\-button.c.\hypertarget{ei__button_8c_a9c96de9a79b0af265aa2eda1044e3f58}{
+\index{ei\_\-button.c@{ei\_\-button.c}!geomnotify\_\-button@{geomnotify\_\-button}}
+\index{geomnotify\_\-button@{geomnotify\_\-button}!ei_button.c@{ei\_\-button.c}}
+\subsubsection[{geomnotify\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}void geomnotify\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget}, \/  {\bf ei\_\-rect\_\-t} {\em rect})}}
+\label{ei__button_8c_a9c96de9a79b0af265aa2eda1044e3f58}
+update the screen\_\-location of the button 
+
+Definition at line 126 of file ei\_\-button.c.\hypertarget{ei__button_8c_ac856eb5d05f4cbc7fc6b388e0fe41477}{
+\index{ei\_\-button.c@{ei\_\-button.c}!release\_\-button@{release\_\-button}}
+\index{release\_\-button@{release\_\-button}!ei_button.c@{ei\_\-button.c}}
+\subsubsection[{release\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}void release\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget})}}
+\label{ei__button_8c_ac856eb5d05f4cbc7fc6b388e0fe41477}
+free memory from button 
+
+Definition at line 20 of file ei\_\-button.c.\hypertarget{ei__button_8c_a62ca980c70d71bdf3df3f3e4268980f0}{
+\index{ei\_\-button.c@{ei\_\-button.c}!set\_\-defaults\_\-button@{set\_\-defaults\_\-button}}
+\index{set\_\-defaults\_\-button@{set\_\-defaults\_\-button}!ei_button.c@{ei\_\-button.c}}
+\subsubsection[{set\_\-defaults\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}void set\_\-defaults\_\-button ({\bf ei\_\-widget\_\-t} $\ast$ {\em widget})}}
+\label{ei__button_8c_a62ca980c70d71bdf3df3f3e4268980f0}
+affect default values to button 
+
+Definition at line 103 of file ei\_\-button.c.

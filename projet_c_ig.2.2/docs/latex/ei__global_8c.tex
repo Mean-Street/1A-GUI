@@ -1,0 +1,275 @@
+\hypertarget{ei__global_8c}{
+\section{ei\_\-global.c File Reference}
+\label{ei__global_8c}\index{ei\_\-global.c@{ei\_\-global.c}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}ei\_\-widgetclass.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-global.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ei\_\-utils.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlinked__class}{linked\_\-class} $\ast$$\ast$ \hyperlink{ei__global_8c_afb32369b3ac99c03aea43a8476092e3b}{get\_\-widget\_\-classes} (void)
+\item 
+\hyperlink{structlinked__eventtype}{linked\_\-eventtype} $\ast$$\ast$ \hyperlink{ei__global_8c_adfabef7c4c6a867fc760c70ccf958226}{get\_\-events} (void)
+\item 
+\hyperlink{structlinked__eventtype}{linked\_\-eventtype} $\ast$ \hyperlink{ei__global_8c_acab507d68b5e0784dfab29d468f16725}{get\_\-simple\_\-events} (void)
+\item 
+\hyperlink{structei__widgetclass__t}{ei\_\-widgetclass\_\-t} $\ast$$\ast$ \hyperlink{ei__global_8c_a2b80738f28f90df99d5c0a255fd58e43}{get\_\-classes} (void)
+\item 
+\hyperlink{structei__widgetclass__t}{ei\_\-widgetclass\_\-t} $\ast$ \hyperlink{ei__global_8c_abeeaa4f22bdd9e0fcf444f62d130eab5}{get\_\-simple\_\-classes} (void)
+\item 
+\hyperlink{structlinked__class}{linked\_\-class} $\ast$$\ast$ \hyperlink{ei__global_8c_a176347ffe4f60b8d849ce1fa3cefb80a}{get\_\-class\_\-events} (\hyperlink{ei__event_8h_a24a8242260cfd8ddb6ef915f3de5a10f}{ei\_\-tag\_\-t} tag)
+\item 
+\hyperlink{structlinked__event}{linked\_\-event} $\ast$$\ast$ \hyperlink{ei__global_8c_a630442c8b8a3e1f653117991eb663635}{get\_\-class\_\-widget\_\-events} (\hyperlink{ei__event_8h_a24a8242260cfd8ddb6ef915f3de5a10f}{ei\_\-tag\_\-t} tag)
+\item 
+\hyperlink{structlinked__class}{linked\_\-class} $\ast$ \hyperlink{ei__global_8c_aa41161e4ec3ba59aef5f00c8c44d5cc8}{get\_\-simple\_\-class\_\-events} (\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\_\-widgetclass\_\-name\_\-t} name)
+\item 
+\hyperlink{structlinked__event}{linked\_\-event} $\ast$ \hyperlink{ei__global_8c_af17e9902f21f324b068dc9bf9f6b3e73}{get\_\-simple\_\-class\_\-widget\_\-events} (\hyperlink{ei__event_8h_a24a8242260cfd8ddb6ef915f3de5a10f}{ei\_\-tag\_\-t} tag)
+\item 
+\hyperlink{structlinked__event}{linked\_\-event} $\ast$$\ast$ \hyperlink{ei__global_8c_af334f14b07ae27f491b713887888091d}{get\_\-widget\_\-events} (void)
+\item 
+void \hyperlink{ei__global_8c_a8e3547d53f26d42d438bb97e077acb45}{get\_\-channel} (int $\ast$ir, int $\ast$ig, int $\ast$ib, int $\ast$ia)
+\item 
+void \hyperlink{ei__global_8c_ad656ba2b579fa3e88d9b47a5465de7ef}{set\_\-channel} (int ir, int ig, int ib, int ia)
+\item 
+\hyperlink{structrects__list}{rects\_\-list} $\ast$ \hyperlink{ei__global_8c_a51d0be8b3b010e9efeebcd24ae8f290b}{get\_\-invalid\_\-rects\_\-list} (void)
+\item 
+void \hyperlink{ei__global_8c_a1894f4311627b67478d2260a2aeb0fbd}{add\_\-invalid\_\-rect} (\hyperlink{structei__rect__t}{ei\_\-rect\_\-t} rect)
+\item 
+\hyperlink{structei__rect__t}{ei\_\-rect\_\-t} $\ast$ \hyperlink{ei__global_8c_a0f43e467cce4ec7bbcc726c757f40348}{read\_\-next\_\-invalid\_\-rect} (void)
+\item 
+static void \hyperlink{ei__global_8c_af73bf4e6f9ca26ebe2986b8f83ee2c59}{free\_\-class\_\-events} ()
+\item 
+static void \hyperlink{ei__global_8c_a6983037a37df5d05320b222a31a64d5c}{free\_\-widget\_\-events} ()
+\item 
+static void \hyperlink{ei__global_8c_af69b12dc0310c973704d4f073b4bdd61}{free\_\-events} ()
+\item 
+void \hyperlink{ei__global_8c_aa0ec4e0ebe967319fc1c5221ab67f32c}{free\_\-bind\_\-struct} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structei__widgetclass__t}{ei\_\-widgetclass\_\-t} $\ast$ \hyperlink{ei__global_8c_a2e7e9c6591666141e50c4dad16c66044}{CLASSES} = NULL
+\item 
+static \hyperlink{structlinked__class}{linked\_\-class} $\ast$ \hyperlink{ei__global_8c_ab6728db54d353b8029688ee959dc6e49}{CLASS\_\-EVENTS} = NULL
+\item 
+static \hyperlink{structlinked__event}{linked\_\-event} $\ast$ \hyperlink{ei__global_8c_a74f2b5977df1b45e3f29ac086b9f4931}{WIDGET\_\-EVENTS} = NULL
+\item 
+static \hyperlink{structlinked__eventtype}{linked\_\-eventtype} $\ast$ \hyperlink{ei__global_8c_aaee9afd1851af46c726831b42c44c970}{EVENTS} = NULL
+\item 
+static int \hyperlink{ei__global_8c_a0047f3a866e034aad521b21744d59d32}{IR}
+\item 
+static int \hyperlink{ei__global_8c_a48977626bbb662c182e80c654d02e699}{IG}
+\item 
+static int \hyperlink{ei__global_8c_a86ae45b3f916b9745dbc530a9913c2f6}{IB}
+\item 
+static int \hyperlink{ei__global_8c_ae9045c756102d268ad6cc31da211f33a}{IA}
+\item 
+static \hyperlink{structrects__list}{rects\_\-list} \hyperlink{ei__global_8c_ad372d35fc3b49d193da484984cb8f638}{INVALID\_\-RECTS} = \{NULL, NULL\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__global_8c_a1894f4311627b67478d2260a2aeb0fbd}{
+\index{ei\_\-global.c@{ei\_\-global.c}!add\_\-invalid\_\-rect@{add\_\-invalid\_\-rect}}
+\index{add\_\-invalid\_\-rect@{add\_\-invalid\_\-rect}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{add\_\-invalid\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}void add\_\-invalid\_\-rect ({\bf ei\_\-rect\_\-t} {\em rect})}}
+\label{ei__global_8c_a1894f4311627b67478d2260a2aeb0fbd}
+
+
+Definition at line 120 of file ei\_\-global.c.\hypertarget{ei__global_8c_aa0ec4e0ebe967319fc1c5221ab67f32c}{
+\index{ei\_\-global.c@{ei\_\-global.c}!free\_\-bind\_\-struct@{free\_\-bind\_\-struct}}
+\index{free\_\-bind\_\-struct@{free\_\-bind\_\-struct}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{free\_\-bind\_\-struct}]{\setlength{\rightskip}{0pt plus 5cm}void free\_\-bind\_\-struct (void)}}
+\label{ei__global_8c_aa0ec4e0ebe967319fc1c5221ab67f32c}
+
+
+Definition at line 252 of file ei\_\-global.c.\hypertarget{ei__global_8c_af73bf4e6f9ca26ebe2986b8f83ee2c59}{
+\index{ei\_\-global.c@{ei\_\-global.c}!free\_\-class\_\-events@{free\_\-class\_\-events}}
+\index{free\_\-class\_\-events@{free\_\-class\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{free\_\-class\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}static void free\_\-class\_\-events ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_af73bf4e6f9ca26ebe2986b8f83ee2c59}
+
+
+Definition at line 161 of file ei\_\-global.c.\hypertarget{ei__global_8c_af69b12dc0310c973704d4f073b4bdd61}{
+\index{ei\_\-global.c@{ei\_\-global.c}!free\_\-events@{free\_\-events}}
+\index{free\_\-events@{free\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{free\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}static void free\_\-events ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_af69b12dc0310c973704d4f073b4bdd61}
+
+
+Definition at line 230 of file ei\_\-global.c.\hypertarget{ei__global_8c_a6983037a37df5d05320b222a31a64d5c}{
+\index{ei\_\-global.c@{ei\_\-global.c}!free\_\-widget\_\-events@{free\_\-widget\_\-events}}
+\index{free\_\-widget\_\-events@{free\_\-widget\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{free\_\-widget\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}static void free\_\-widget\_\-events ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a6983037a37df5d05320b222a31a64d5c}
+
+
+Definition at line 196 of file ei\_\-global.c.\hypertarget{ei__global_8c_a8e3547d53f26d42d438bb97e077acb45}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-channel@{get\_\-channel}}
+\index{get\_\-channel@{get\_\-channel}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-channel}]{\setlength{\rightskip}{0pt plus 5cm}void get\_\-channel (int $\ast$ {\em ir}, \/  int $\ast$ {\em ig}, \/  int $\ast$ {\em ib}, \/  int $\ast$ {\em ia})}}
+\label{ei__global_8c_a8e3547d53f26d42d438bb97e077acb45}
+
+
+Definition at line 97 of file ei\_\-global.c.\hypertarget{ei__global_8c_a176347ffe4f60b8d849ce1fa3cefb80a}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-class\_\-events@{get\_\-class\_\-events}}
+\index{get\_\-class\_\-events@{get\_\-class\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-class\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-class}$\ast$$\ast$ get\_\-class\_\-events ({\bf ei\_\-tag\_\-t} {\em tag})}}
+\label{ei__global_8c_a176347ffe4f60b8d849ce1fa3cefb80a}
+
+
+Definition at line 44 of file ei\_\-global.c.\hypertarget{ei__global_8c_a630442c8b8a3e1f653117991eb663635}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-class\_\-widget\_\-events@{get\_\-class\_\-widget\_\-events}}
+\index{get\_\-class\_\-widget\_\-events@{get\_\-class\_\-widget\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-class\_\-widget\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-event}$\ast$$\ast$ get\_\-class\_\-widget\_\-events ({\bf ei\_\-tag\_\-t} {\em tag})}}
+\label{ei__global_8c_a630442c8b8a3e1f653117991eb663635}
+
+
+Definition at line 56 of file ei\_\-global.c.\hypertarget{ei__global_8c_a2b80738f28f90df99d5c0a255fd58e43}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-classes@{get\_\-classes}}
+\index{get\_\-classes@{get\_\-classes}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widgetclass\_\-t}$\ast$$\ast$ get\_\-classes (void)}}
+\label{ei__global_8c_a2b80738f28f90df99d5c0a255fd58e43}
+
+
+Definition at line 34 of file ei\_\-global.c.\hypertarget{ei__global_8c_adfabef7c4c6a867fc760c70ccf958226}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-events@{get\_\-events}}
+\index{get\_\-events@{get\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-eventtype}$\ast$$\ast$ get\_\-events (void)}}
+\label{ei__global_8c_adfabef7c4c6a867fc760c70ccf958226}
+
+
+Definition at line 24 of file ei\_\-global.c.\hypertarget{ei__global_8c_a51d0be8b3b010e9efeebcd24ae8f290b}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-invalid\_\-rects\_\-list@{get\_\-invalid\_\-rects\_\-list}}
+\index{get\_\-invalid\_\-rects\_\-list@{get\_\-invalid\_\-rects\_\-list}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-invalid\_\-rects\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rects\_\-list}$\ast$ get\_\-invalid\_\-rects\_\-list (void)}}
+\label{ei__global_8c_a51d0be8b3b010e9efeebcd24ae8f290b}
+
+
+Definition at line 114 of file ei\_\-global.c.\hypertarget{ei__global_8c_aa41161e4ec3ba59aef5f00c8c44d5cc8}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-simple\_\-class\_\-events@{get\_\-simple\_\-class\_\-events}}
+\index{get\_\-simple\_\-class\_\-events@{get\_\-simple\_\-class\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-simple\_\-class\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-class}$\ast$ get\_\-simple\_\-class\_\-events ({\bf ei\_\-widgetclass\_\-name\_\-t} {\em name})}}
+\label{ei__global_8c_aa41161e4ec3ba59aef5f00c8c44d5cc8}
+
+
+Definition at line 68 of file ei\_\-global.c.\hypertarget{ei__global_8c_af17e9902f21f324b068dc9bf9f6b3e73}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-simple\_\-class\_\-widget\_\-events@{get\_\-simple\_\-class\_\-widget\_\-events}}
+\index{get\_\-simple\_\-class\_\-widget\_\-events@{get\_\-simple\_\-class\_\-widget\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-simple\_\-class\_\-widget\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-event}$\ast$ get\_\-simple\_\-class\_\-widget\_\-events ({\bf ei\_\-tag\_\-t} {\em tag})}}
+\label{ei__global_8c_af17e9902f21f324b068dc9bf9f6b3e73}
+
+
+Definition at line 80 of file ei\_\-global.c.\hypertarget{ei__global_8c_abeeaa4f22bdd9e0fcf444f62d130eab5}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-simple\_\-classes@{get\_\-simple\_\-classes}}
+\index{get\_\-simple\_\-classes@{get\_\-simple\_\-classes}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-simple\_\-classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widgetclass\_\-t}$\ast$ get\_\-simple\_\-classes (void)}}
+\label{ei__global_8c_abeeaa4f22bdd9e0fcf444f62d130eab5}
+
+
+Definition at line 39 of file ei\_\-global.c.\hypertarget{ei__global_8c_acab507d68b5e0784dfab29d468f16725}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-simple\_\-events@{get\_\-simple\_\-events}}
+\index{get\_\-simple\_\-events@{get\_\-simple\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-simple\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-eventtype}$\ast$ get\_\-simple\_\-events (void)}}
+\label{ei__global_8c_acab507d68b5e0784dfab29d468f16725}
+
+
+Definition at line 29 of file ei\_\-global.c.\hypertarget{ei__global_8c_afb32369b3ac99c03aea43a8476092e3b}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-widget\_\-classes@{get\_\-widget\_\-classes}}
+\index{get\_\-widget\_\-classes@{get\_\-widget\_\-classes}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-widget\_\-classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-class}$\ast$$\ast$ get\_\-widget\_\-classes (void)}}
+\label{ei__global_8c_afb32369b3ac99c03aea43a8476092e3b}
+
+
+Definition at line 19 of file ei\_\-global.c.\hypertarget{ei__global_8c_af334f14b07ae27f491b713887888091d}{
+\index{ei\_\-global.c@{ei\_\-global.c}!get\_\-widget\_\-events@{get\_\-widget\_\-events}}
+\index{get\_\-widget\_\-events@{get\_\-widget\_\-events}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{get\_\-widget\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-event}$\ast$$\ast$ get\_\-widget\_\-events (void)}}
+\label{ei__global_8c_af334f14b07ae27f491b713887888091d}
+
+
+Definition at line 92 of file ei\_\-global.c.\hypertarget{ei__global_8c_a0f43e467cce4ec7bbcc726c757f40348}{
+\index{ei\_\-global.c@{ei\_\-global.c}!read\_\-next\_\-invalid\_\-rect@{read\_\-next\_\-invalid\_\-rect}}
+\index{read\_\-next\_\-invalid\_\-rect@{read\_\-next\_\-invalid\_\-rect}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{read\_\-next\_\-invalid\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-rect\_\-t}$\ast$ read\_\-next\_\-invalid\_\-rect (void)}}
+\label{ei__global_8c_a0f43e467cce4ec7bbcc726c757f40348}
+
+
+Definition at line 137 of file ei\_\-global.c.\hypertarget{ei__global_8c_ad656ba2b579fa3e88d9b47a5465de7ef}{
+\index{ei\_\-global.c@{ei\_\-global.c}!set\_\-channel@{set\_\-channel}}
+\index{set\_\-channel@{set\_\-channel}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{set\_\-channel}]{\setlength{\rightskip}{0pt plus 5cm}void set\_\-channel (int {\em ir}, \/  int {\em ig}, \/  int {\em ib}, \/  int {\em ia})}}
+\label{ei__global_8c_ad656ba2b579fa3e88d9b47a5465de7ef}
+
+
+Definition at line 105 of file ei\_\-global.c.
+
+\subsection{Variable Documentation}
+\hypertarget{ei__global_8c_ab6728db54d353b8029688ee959dc6e49}{
+\index{ei\_\-global.c@{ei\_\-global.c}!CLASS\_\-EVENTS@{CLASS\_\-EVENTS}}
+\index{CLASS\_\-EVENTS@{CLASS\_\-EVENTS}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{CLASS\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-class}$\ast$ {\bf CLASS\_\-EVENTS} = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_ab6728db54d353b8029688ee959dc6e49}
+
+
+Definition at line 10 of file ei\_\-global.c.\hypertarget{ei__global_8c_a2e7e9c6591666141e50c4dad16c66044}{
+\index{ei\_\-global.c@{ei\_\-global.c}!CLASSES@{CLASSES}}
+\index{CLASSES@{CLASSES}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{CLASSES}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\_\-widgetclass\_\-t}$\ast$ {\bf CLASSES} = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a2e7e9c6591666141e50c4dad16c66044}
+
+
+Definition at line 8 of file ei\_\-global.c.\hypertarget{ei__global_8c_aaee9afd1851af46c726831b42c44c970}{
+\index{ei\_\-global.c@{ei\_\-global.c}!EVENTS@{EVENTS}}
+\index{EVENTS@{EVENTS}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-eventtype}$\ast$ {\bf EVENTS} = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_aaee9afd1851af46c726831b42c44c970}
+
+
+Definition at line 12 of file ei\_\-global.c.\hypertarget{ei__global_8c_ae9045c756102d268ad6cc31da211f33a}{
+\index{ei\_\-global.c@{ei\_\-global.c}!IA@{IA}}
+\index{IA@{IA}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{IA}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf IA}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_ae9045c756102d268ad6cc31da211f33a}
+
+
+Definition at line 13 of file ei\_\-global.c.\hypertarget{ei__global_8c_a86ae45b3f916b9745dbc530a9913c2f6}{
+\index{ei\_\-global.c@{ei\_\-global.c}!IB@{IB}}
+\index{IB@{IB}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{IB}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf IB}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a86ae45b3f916b9745dbc530a9913c2f6}
+
+
+Definition at line 13 of file ei\_\-global.c.\hypertarget{ei__global_8c_a48977626bbb662c182e80c654d02e699}{
+\index{ei\_\-global.c@{ei\_\-global.c}!IG@{IG}}
+\index{IG@{IG}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{IG}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf IG}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a48977626bbb662c182e80c654d02e699}
+
+
+Definition at line 13 of file ei\_\-global.c.\hypertarget{ei__global_8c_ad372d35fc3b49d193da484984cb8f638}{
+\index{ei\_\-global.c@{ei\_\-global.c}!INVALID\_\-RECTS@{INVALID\_\-RECTS}}
+\index{INVALID\_\-RECTS@{INVALID\_\-RECTS}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{INVALID\_\-RECTS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rects\_\-list} {\bf INVALID\_\-RECTS} = \{NULL, NULL\}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_ad372d35fc3b49d193da484984cb8f638}
+
+
+Definition at line 15 of file ei\_\-global.c.\hypertarget{ei__global_8c_a0047f3a866e034aad521b21744d59d32}{
+\index{ei\_\-global.c@{ei\_\-global.c}!IR@{IR}}
+\index{IR@{IR}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{IR}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf IR}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a0047f3a866e034aad521b21744d59d32}
+
+
+Definition at line 13 of file ei\_\-global.c.\hypertarget{ei__global_8c_a74f2b5977df1b45e3f29ac086b9f4931}{
+\index{ei\_\-global.c@{ei\_\-global.c}!WIDGET\_\-EVENTS@{WIDGET\_\-EVENTS}}
+\index{WIDGET\_\-EVENTS@{WIDGET\_\-EVENTS}!ei_global.c@{ei\_\-global.c}}
+\subsubsection[{WIDGET\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}{\bf linked\_\-event}$\ast$ {\bf WIDGET\_\-EVENTS} = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{ei__global_8c_a74f2b5977df1b45e3f29ac086b9f4931}
+
+
+Definition at line 11 of file ei\_\-global.c.
