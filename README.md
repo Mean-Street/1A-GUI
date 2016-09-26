@@ -17,7 +17,7 @@ Internet
 
 Notes
 -----
-	===== WARNING =====
+*Warning*
 When a toplevel is declared, you have to call toplevel-configure BEFORE adding sons to this toplevel.
 Because the toplevel-configure function is charged to create the close-button, the resize-button and the central frame.
 A widget in a toplevel will actually be a son of the central frame : so we cannot declare a son of the toplevel before having created the central frame.
@@ -25,7 +25,7 @@ A widget in a toplevel will actually be a son of the central frame : so we canno
 Note : That's why we brought a little modification to the test file "hello-world.c". We call widget-create for the button
 after the frame-configure call.
 
-	===== WARNING =====
+*Warning*
 Invalid rects doesn't work. I tried to create a list of ei-rect-t, and to redraw only in these rectangles.
 The code is still in ei-global.c, but not called. It seems that the computations are more time-expensive than the drawing, 
 so it slows the programm a lot. In this version, we always redraw the whole root-window (clipper is always NULL).
